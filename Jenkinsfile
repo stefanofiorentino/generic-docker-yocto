@@ -1,5 +1,8 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+        label 'AVAM'
+        dockerfile true
+    }
     stages {
         stage('Test') {
             steps {
